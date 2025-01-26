@@ -1,3 +1,18 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "nombre": "Pepe",
+      "email": "pepeargento@mail.com",
+      "telefono": "11113311",
+      "empresa": "Calzados paras gordas",
+      "id": 1
+    },
+    {
+      "nombre": "Moni",
+      "email": "moniargento@mail.com",
+      "telefono": "12313414",
+      "empresa": "Aplasta la cajeta",
+      "id": 2
+    }
+  ]
 }
