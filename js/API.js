@@ -38,3 +38,33 @@ export const eliminarCliente = async id =>{
         log(error);
     }
 }
+
+export const obtenerCliente = async id => {
+    try {
+        const resultado = await fetch(`${url}/${id}`);
+        const cliente = await resultado.json();
+        // console.log(cliente);
+        return cliente;
+    } catch (error) {
+        console.log(error);
+    }    
+}
+
+export const editarCliente =  async cliente => {
+    // console.log(cliente);
+    
+    try {
+        await fetch(`${url}/${cliente.id}`,{
+            method: 'PUT',
+            body: JSON.stringify(cliente),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        
+    } catch (error) {
+        log(error);
+    }
+    
+    window.location.href = 'index.html';
+}

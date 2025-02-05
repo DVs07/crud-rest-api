@@ -46,9 +46,8 @@ import{ obtenerClientes, eliminarCliente } from './API.js';
 
             if(confirmar){
                 eliminarCliente(clienteId);
-                
             }
             
         }
-    }
+    }    
 })();
